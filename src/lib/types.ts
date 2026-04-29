@@ -1,4 +1,4 @@
-export type MentorType = "einstein" | "marcus" | "ada";
+export type MentorType = "anshuman" | "abhimanyu" | "kshitij";
 
 export interface Message {
   id: string;

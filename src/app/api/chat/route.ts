@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!mentor || !["einstein", "marcus", "ada"].includes(mentor)) {
+    if (!mentor || !["anshuman", "abhimanyu", "kshitij"].includes(mentor)) {
       return NextResponse.json(
         { success: false, error: "Invalid mentor.", errorCode: "VALIDATION" },
         { status: 400 }

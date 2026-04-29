@@ -16,20 +16,20 @@ const config: Config = {
           DEFAULT: "#333333",
           soft: "#2A2A2A",
         },
-        einstein: {
-          DEFAULT: "#EAB308",
-          soft: "#422006",
-          ink: "#FEF08A",
+        anshuman: {
+          DEFAULT: "#3B82F6",
+          soft: "#1E3A8A",
+          ink: "#DBEAFE",
         },
-        marcus: {
-          DEFAULT: "#9CA3AF",
-          soft: "#1F2937",
-          ink: "#F3F4F6",
+        abhimanyu: {
+          DEFAULT: "#10B981",
+          soft: "#064E3B",
+          ink: "#D1FAE5",
         },
-        ada: {
-          DEFAULT: "#8B5CF6",
-          soft: "#2E1065",
-          ink: "#DDD6FE",
+        kshitij: {
+          DEFAULT: "#F97316",
+          soft: "#7C2D12",
+          ink: "#FFEDD5",
         },
       },
       fontFamily: {

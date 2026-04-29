@@ -9,9 +9,9 @@ const STORAGE_KEY = "chronos-chatbot:threads:v1";
 type Threads = Record<MentorType, Message[]>;
 
 const emptyThreads = (): Threads => ({
-  einstein: [],
-  marcus: [],
-  ada: [],
+  anshuman: [],
+  abhimanyu: [],
+  kshitij: [],
 });
 
 function loadThreads(): Threads {
@@ -37,7 +37,7 @@ function loadThreads(): Threads {
 
 export function useChat() {
   const [threads, setThreads] = useState<Threads>(emptyThreads);
-  const [activeMentor, setActiveMentor] = useState<MentorType>("einstein");
+  const [activeMentor, setActiveMentor] = useState<MentorType>("anshuman");
   const [loadingMentor, setLoadingMentor] = useState<MentorType | null>(null);
   const [error, setError] = useState<string | null>(null);
   const hydratedRef = useRef(false);

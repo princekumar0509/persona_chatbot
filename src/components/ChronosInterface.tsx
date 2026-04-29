@@ -62,7 +62,7 @@ export default function ChronosInterface() {
     }
     const utterance = new SpeechSynthesisUtterance(text);
     // Try to set pitch/rate based on mentor
-    utterance.pitch = activeMentor === "einstein" ? 1.2 : activeMentor === "marcus" ? 0.7 : 1.5;
+    utterance.pitch = activeMentor === "anshuman" ? 1.0 : activeMentor === "abhimanyu" ? 0.9 : 1.1;
     utterance.rate = 0.9;
     utterance.onend = () => setSpeaking(false);
     synth.speak(utterance);

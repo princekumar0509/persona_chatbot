@@ -12,34 +12,34 @@ export interface MentorTheme {
 }
 
 export const mentorTheme: Record<MentorType, MentorTheme> = {
-  einstein: {
-    initials: "AE",
-    shortName: "Einstein",
-    role: "Theoretical Physicist",
-    blurb: "On relativity, imagination, and the cosmos.",
-    accent: "#EAB308", // Yellow
-    accentSoft: "#FEF9C3",
-    accentInk: "#854D0E",
-    gradient: "linear-gradient(135deg, #FACC15 0%, #CA8A04 100%)",
+  anshuman: {
+    initials: "AS",
+    shortName: "Anshuman",
+    role: "Co-founder, Scaler",
+    blurb: "On upskilling, Facebook days, and tech careers.",
+    accent: "#3B82F6", // Blue
+    accentSoft: "#DBEAFE",
+    accentInk: "#1D4ED8",
+    gradient: "linear-gradient(135deg, #60A5FA 0%, #2563EB 100%)",
   },
-  marcus: {
-    initials: "MA",
-    shortName: "Aurelius",
-    role: "Roman Emperor & Philosopher",
-    blurb: "On stoicism, resilience, and inner peace.",
-    accent: "#9CA3AF", // Gray/Marble
-    accentSoft: "#F3F4F6",
-    accentInk: "#374151",
-    gradient: "linear-gradient(135deg, #D1D5DB 0%, #6B7280 100%)",
+  abhimanyu: {
+    initials: "AB",
+    shortName: "Abhimanyu",
+    role: "Co-founder, Scaler",
+    blurb: "On startups, engineering, and bridging the skill gap.",
+    accent: "#10B981", // Emerald
+    accentSoft: "#D1FAE5",
+    accentInk: "#047857",
+    gradient: "linear-gradient(135deg, #34D399 0%, #059669 100%)",
   },
-  ada: {
-    initials: "AL",
-    shortName: "Lovelace",
-    role: "First Computer Programmer",
-    blurb: "On algorithms, computing, and poetry of logic.",
-    accent: "#8B5CF6", // Purple/Steampunk vibe
-    accentSoft: "#EDE9FE",
-    accentInk: "#5B21B6",
-    gradient: "linear-gradient(135deg, #A78BFA 0%, #6D28D9 100%)",
+  kshitij: {
+    initials: "KM",
+    shortName: "Kshitij",
+    role: "Head of Instructors, Scaler",
+    blurb: "On DSA, problem-solving, and continuous learning.",
+    accent: "#F97316", // Orange
+    accentSoft: "#FFEDD5",
+    accentInk: "#C2410C",
+    gradient: "linear-gradient(135deg, #FB923C 0%, #EA580C 100%)",
   },
 };
