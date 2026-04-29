@@ -2,7 +2,7 @@
 
 A fully functional AI chatbot featuring three Scaler Academy personalities — **Anshuman Singh**, **Kshitij Mishra**, and **Abhimanyu Saxena**. Built with Next.js 14, TypeScript, TailwindCSS, and the Google Gemini API.
 
-> **[LIVE DEMO](https://persona-chatbot-flax.vercel.app/)** ← _Update with your URL after deploying_
+> **[LIVE DEMO](https://persona-chatbot-mu.vercel.app/)**
 
 ## Features
 
