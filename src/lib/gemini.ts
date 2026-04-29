@@ -18,10 +18,10 @@ const client = new GoogleGenerativeAI(process.env.GEMINI_API_KEY ?? "");
 // Then fall back to explicit older versions whose daily quota resets, so a
 // burst on the latest models doesn't kill the app.
 const MODEL_FALLBACK_CHAIN = [
-  "gemini-flash-lite-latest",
-  "gemini-flash-latest",
+  "gemini-2.0-flash",
   "gemini-2.5-flash-lite",
-  "gemini-2.5-flash",
+  "gemini-flash-latest",
+  "gemini-flash-lite-latest",
 ];
 
 function isRecoverableModelError(err: unknown): boolean {
@@ -46,8 +46,8 @@ export async function callGemini(
         model: modelName,
         systemInstruction: systemPrompt,
         generationConfig: {
-          temperature: 0.7,
-          maxOutputTokens: 1024,
+          temperature: 0.85,
+          maxOutputTokens: 280,
         },
       });
 
