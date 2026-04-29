@@ -62,7 +62,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const err = error as { status?: number; name?: string };
+    const err = error as { status?: number; name?: string; message?: string };
+    if (err?.status === 403) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: "API Key is invalid or has been revoked (e.g., reported as leaked). Please check your .env.local file.",
+          errorCode: "FORBIDDEN",
+        },
+        { status: 403 }
+      );
+    }
+
     if (err?.status === 429) {
       return NextResponse.json(
         {
